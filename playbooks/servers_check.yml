@@ -1,6 +1,6 @@
 ---
 - name:                    Hosts Check
-  hosts:                   all 
+  hosts:                   dmgr,cnx_was_servers,docs_servers,conversion_servers,ihs_servers,k8s_masters,k8s_workers
   become:                  true
   tasks:
     - debug:  var=ansible_default_ipv4.address

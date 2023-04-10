@@ -109,6 +109,7 @@
     url:                 "{{ __oracle_download_location }}/{{ item }}"
     dest:                "{{ __jdbc_destination }}"
     mode:                0755
+    validate_certs:      false
   with_items:
    - "ojdbc7.jar"
   when:
@@ -120,6 +121,7 @@
     url:                 "{{ __oracle_download_location }}/{{ item }}"
     dest:                "{{ __jdbc_destination }}"
     mode:                0755
+    validate_certs:      false
   with_items:
    - "ojdbc8.jar"
   when:

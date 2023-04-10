@@ -1,5 +1,5 @@
-- name:                  Setup Database
-  import_playbook:       third_party/setup-database.yml
+#- name:                  Setup Database
+#  import_playbook:       third_party/setup-database.yml
 
 - name:                  Setup NFS
   import_playbook:       third_party/setup-nfs.yml
