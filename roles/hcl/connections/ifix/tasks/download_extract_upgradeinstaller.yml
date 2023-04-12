@@ -23,6 +23,7 @@
     src:                   "{{ __tmp_dir }}/cnx-ifix/{{ __cnx_ifix_installer }}"
     dest:                  "{{ __cnx_install_location }}/updateInstaller"
     copy:                  no
+    validate_certs:        false
   register:                download_and_unpack_connections_upgradeinstaller
   until:                   download_and_unpack_connections_upgradeinstaller is succeeded
   retries: 3

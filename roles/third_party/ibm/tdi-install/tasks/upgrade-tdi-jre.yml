@@ -34,6 +34,7 @@
     dest:                   "{{ __tmp_extraction_folder }}"
     remote_src:             yes
     mode:                   0755
+    validate_certs:         false
   when:
     - jre_stat.stat.exists
     - tdi_already_installed.stat.exists
