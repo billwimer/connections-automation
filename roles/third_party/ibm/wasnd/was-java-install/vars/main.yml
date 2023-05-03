@@ -1,5 +1,5 @@
 ---
-__was_major_version:      "{{ was_major_version | default('8') }}"  
+__was_major_version:      "{{ was_major_version | default('8') }}"
 __tmp_dir:                "{{ tmp_dir | default('/opt/IBM/Binaries') }}/was_fixes"
 __logs_dir:               "{{ tmp_dir | default('/opt/IBM/Binaries') }}/logs"
 __iim_install_location:   "{{ iim_install_location  | default('/opt/IBM/InstallationManager') }}"
@@ -29,7 +29,7 @@ __iim_keep_fetched_files: "{{ iim_keep_fetched_files | default(false) }}"
 __iim_preserve_artifacts: "{{ iim_preserve_artifacts | default(false) }}"
 
 __was_fixes_version:       "{{ was_fp_version | default( __was_fp_version_latest ) }}"
-__was_fp_version_latest:   "{{ was_fp_version_latest | default( __was_fp_version_fp22 ) }}"
+__was_fp_version_latest:   "{{ was_fp_version_latest | default( __was_fp_version_fp23 ) }}"
 __was_fp_version_fp20:     "8.5.5020.20210708_1826"
 __was_fp_version_fp19:     "8.5.5019.20210118_0346"
 __was_fp_version_fp21:     "8.5.5021.20220202_1245"
