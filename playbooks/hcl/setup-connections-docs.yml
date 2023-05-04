@@ -19,11 +19,11 @@
   roles:
     - roles/hcl/docs/setup-environment
 
-- name:                    Setup Docs database
-  hosts:                   db2_servers, oracle_servers, mssql_servers
-  become:                  true
-  roles:
-    - roles/hcl/connections-wizards
+#- name:                    Setup Docs database
+#  hosts:                   db2_servers, oracle_servers, mssql_servers
+#  become:                  true
+#  roles:
+#    - roles/hcl/connections-wizards
 
 - name:                   Install WebSphere Application Server on Docs servers
   hosts:                  docs_servers, conversion_servers, viewer_servers, proxy_servers
@@ -76,11 +76,11 @@
   roles:
     - roles/hcl/docs/create_docs_clusters
 
-- name:                    Create Job Target
-  hosts:                   dmgr, docs_servers, conversion_servers, ihs_servers
-  become:                  true
-  roles:
-    - roles/hcl/docs/create_job_targets
+#- name:                    Create Job Target
+#  hosts:                   dmgr, docs_servers, conversion_servers, ihs_servers
+#  become:                  true
+#  roles:
+#    - roles/hcl/docs/create_job_targets
 
 - name:                    Setup Docs
   hosts:                   docs_servers, conversion_servers, viewer_servers, proxy_servers, dmgr, cnx_was_servers, ihs_servers
